@@ -1,0 +1,18 @@
+lc-runtime:
+    image: ghcr.io/autonomy-logic/openplc-runtime:latest
+    container_name: openplc-runtime
+    restart: unless-stopped
+
+    ports:
+      - "8443:8443"
+      - "502:502"
+    cap_add:
+      - SYS_NICE
+      - SYS_RESOURCE
+
+    volumes:
+      - openplc-runtime-data:/var/run/runtime
+      - ./plugins.conf:/workdir/plugins.conf
+
+volumes:
+  openplc-runtime-data:

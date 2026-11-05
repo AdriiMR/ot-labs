@@ -1,0 +1,20 @@
+services:
+  fuxa:
+    image: frangoteam/fuxa:latest
+    container_name: fuxa
+    restart: unless-stopped
+
+    ports:
+      - "1881:1881"
+
+    volumes:
+      - fuxa-data:/usr/src/app/FUXA/server/_appdata
+      - fuxa-db:/usr/src/app/FUXA/server/_db
+      - fuxa-logs:/usr/src/app/FUXA/server/_logs
+      - fuxa-images:/usr/src/app/FUXA/server/_images
+
+volumes:
+  fuxa-data:
+  fuxa-db:
+  fuxa-logs:
+  fuxa-images:
