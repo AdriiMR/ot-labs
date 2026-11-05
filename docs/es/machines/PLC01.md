@@ -2,7 +2,7 @@
 
 ## 1. Descripción general
 
-**PLC01** es la máquina virtual encargada de ejecutar la lógica de control del proceso industrial simulado en **OT-Splunk-Lab**, utilizando **OpenPLC Runtime** como entorno de ejecución del controlador lógico programable (PLC).
+**PLC01** es la máquina virtual encargada de ejecutar la lógica de control del proceso industrial simulado en **OT-Lab**, utilizando **OpenPLC Runtime** como entorno de ejecución del controlador lógico programable (PLC).
 
 El sistema utiliza **Debian 12** como sistema operativo base y **Docker Engine** para ejecutar OpenPLC Runtime dentro de un contenedor, facilitando su despliegue, administración y mantenimiento.
 
